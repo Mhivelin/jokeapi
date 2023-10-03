@@ -32,7 +32,6 @@ document.querySelector("#get-joke").addEventListener("click", () => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             if (localStorage.getItem("etat") == null) {
                 localStorage.setItem("etat", JSON.stringify([data])); // Créez un tableau avec la première donnée
             } else {
