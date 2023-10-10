@@ -52,7 +52,7 @@ function afficher_tableau() {
 document.querySelector("#get-joke").addEventListener("click", () => {
 
     // on construit l'url avec la catégorie
-    let url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart";
+    let url = "https://v2.jokeapi.dev/joke/Any?lang=fr&blacklistFlags=nsfw,religious,political,racist,sexist&type=twopart";
 
     // on récupère les données de l'API avec fetch
     fetch(url)
